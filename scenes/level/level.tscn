@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxw5i48tiseag"]
+
+[ext_resource type="PackedScene" uid="uid://dvek2l6x8hgab" path="res://players/flat boy/flat_boy.tscn" id="1_ds5ce"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w4boa"]
+size = Vector2(1423, 22)
+
+[node name="Level" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(139, 247)
+shape = SubResource("RectangleShape2D_w4boa")
+
+[node name="FlatBoy" parent="." instance=ExtResource("1_ds5ce")]
+position = Vector2(262, -7)
+
+[node name="Camera2D" type="Camera2D" parent="."]
