@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dvek2l6x8hgab"]
+
+[node name="FlatBoy" type="CharacterBody2D"]
